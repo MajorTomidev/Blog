@@ -13,7 +13,7 @@ def register(request):
             messages.success(request, f'Welcome Back!, {username} ')
             return redirect('/')
     else:
-        form =UserRegistrationForm()
+        form = UserRegistrationForm()
     return render (request, 'user/register.html', {'form': form})
 
 def home(request):
